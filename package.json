@@ -1,0 +1,10 @@
+{
+  "name": "com.bugan.pubsub",
+  "version": "0.5.0",
+  "displayName": "PubSub Event System",
+  "description": "Tools for decoupling UI and GameObjects",
+  "unity": "6000.1",
+  "author": {
+    "name": "Ricardo Bugan"
+  }
+}

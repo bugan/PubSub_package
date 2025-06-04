@@ -1,0 +1,10 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Toggle label="LastValue" binding-path="lastValue" toggle-on-label-click="true" enabled="false" />
+    <ui:Foldout text="Debug" >
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+            <ui:Toggle label="CurrentValue" binding-path="currentValue" toggle-on-label-click="true" />
+        </ui:VisualElement>
+        <ui:Button text="Send message" name="botao-envia-mensagem" />
+    </ui:Foldout>
+    
+</ui:UXML>
