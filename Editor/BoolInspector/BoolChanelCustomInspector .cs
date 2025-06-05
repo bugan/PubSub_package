@@ -21,7 +21,7 @@ namespace GameEventSystem
         public override VisualElement CreateInspectorGUI()
         {
 
-            visualTreeAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("./ChanelBool.uxml");
+            visualTreeAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("BoolInspector/ChanelBool.uxml");
             
             VisualElement myInspector = visualTreeAsset.Instantiate();
 

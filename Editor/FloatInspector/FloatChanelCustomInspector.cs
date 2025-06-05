@@ -3,6 +3,7 @@ using UnityEditor;
 using UnityEngine.UIElements;
 using UnityEngine;
 using System;
+using System.IO;
 
 
 namespace GameEventSystem
@@ -21,8 +22,14 @@ namespace GameEventSystem
         }
         public override VisualElement CreateInspectorGUI()
         {
-
-            visualTreeAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("./ChanelFloat.uxml");
+            
+            
+            var path =Path.Join(Application.dataPath, "PubSub/Editor/FloatInspector/ChanelFloat.uxml");
+            Debug.Log(path);
+            var relativePath = Path.GetRelativePath(Application.dataPath,path);
+            Debug.Log(relativePath);
+            relativePath = Path.Join("Assets", relativePath);
+            visualTreeAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(relativePath);
             
             VisualElement myInspector = visualTreeAsset.Instantiate();
             slider = myInspector.Q<Slider>("slider");
