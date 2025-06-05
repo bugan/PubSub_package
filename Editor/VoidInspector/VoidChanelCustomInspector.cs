@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine.UIElements;
 using UnityEngine;
 using System;
-
+using System.IO;
 
 namespace GameEventSystem
 {
@@ -21,7 +21,7 @@ namespace GameEventSystem
         public override VisualElement CreateInspectorGUI()
         {
 
-            visualTreeAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/EventSystem/Editor/UXML/ChanelVoid.uxml");
+            visualTreeAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("./ChanelVoid.uxml");
             
             VisualElement myInspector = visualTreeAsset.Instantiate();
 

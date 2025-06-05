@@ -22,7 +22,7 @@ namespace GameEventSystem
         public override VisualElement CreateInspectorGUI()
         {
 
-            visualTreeAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/EventSystem/Editor/UXML/ChanelFloat.uxml");
+            visualTreeAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("./ChanelFloat.uxml");
             
             VisualElement myInspector = visualTreeAsset.Instantiate();
             slider = myInspector.Q<Slider>("slider");
